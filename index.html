@@ -207,6 +207,14 @@ button:ho {
         grid-template-columns:1fr;
     }
 }
+
+.version {
+    margin-top:16px;
+    text-align:right;
+    font-size:11px;
+    color:#777;
+}
+
 </style>
 </head>
 
@@ -342,8 +350,12 @@ button:ho {
 <div class="version">Ver2.1 <span id="today"></span></div>
 
 <script>
-document.getElementById('today').textContent =
-  new Date().toLocaleDateString('ja-JP').replaceAll('-', '/');
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const dd = String(today.getDate()).padStart(2, '0');
+
+  document.getElementById('today').textContent = `${yyyy}/${mm}/${dd}`;
 </script>
 
 </div>
