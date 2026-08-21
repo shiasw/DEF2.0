@@ -509,13 +509,13 @@ function convert(value, setting, overLimit = false){
 
 /* コメント */
 function getComment(t, ranged){
-    const s = ranged ? 6 : 9;
+    const s = ranged ? 4 : 6;
 
-    if(t < s) return "防御を極限まで抑えた構成。他分野に特化したスタイルです。";
-    if(t < s * 2) return "やや攻めっ気を感じる型。状況に応じた活躍が期待できます。";
-    if(t < s * 3) return "個性重視の構成。役割特化の方向性が見えます。";
-    if(t < s * 4) return "バランス良好。安定した運用が可能です。";
-    if(t < s * 5) return "高水準な耐久力。強敵相手でも安心感があります。";
+    if(t < s * 3) return "防御を極限まで抑えた構成。他分野に特化したスタイルです。";
+    if(t < s * 4) return "個性重視の構成。役割特化の方向性が見えます。";
+    if(t < s * 5) return "やや攻めっ気を感じる型。状況に応じた活躍が期待できます。";
+    if(t < s * 6) return "バランス良好。安定した運用が可能です。";
+    if(t < s * 8) return "高水準な耐久力。強敵相手でも安心感があります。";
     return "非常に高い完成度。いかなる局面においても安定した活躍が見込めます。";
 }
 
