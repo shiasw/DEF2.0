@@ -315,7 +315,7 @@ button:hover {
         <span class="slider"></span>
     </label>
 
-    <span style="margin-left:18px;">限界超過</span>
+    <span style="margin-left:18px;">限界突破</span>
     <label class="switch">
         <input type="checkbox" id="overLimit">
         <span class="slider"></span>
@@ -486,7 +486,7 @@ function convert(value, setting, overLimit = false){
     const rounded = Math.max(0, Math.round(score * 10) / 10);
 
     // 通常時は10点を上限にする。
-    // 「限界超過」ON時だけ、レーダー表示用の値として10点を超える。
+    // 「限界突破」ON時だけ、レーダー表示用の値として10点を超える。
     return overLimit ? rounded : Math.min(10, rounded);
 }
 
@@ -556,7 +556,7 @@ function updateChart(){
     const phys  = +document.getElementById("phys").value || 0;
     const magic = +document.getElementById("magic").value || 0;
 
-    // レーダー用：限界超過ON時のみ10点を超える値を保持。
+    // レーダー用：限界突破ON時のみ10点を超える値を保持。
     const radarScores = {
         hp: convert(hp, setting.hp, overLimit),
         phys: convert(phys, setting.phys, overLimit),
@@ -570,7 +570,7 @@ function updateChart(){
         ? [radarScores.hp, radarScores.phys, radarScores.magic, radarScores.vit, radarScores.mnd]
         : [radarScores.hp, radarScores.phys, radarScores.magic, radarScores.eva, radarScores.vit, radarScores.mnd];
 
-    // 総合点は常に各項目10点満点。限界超過はレーダー表示だけに反映。
+    // 総合点は常に各項目10点満点。限界突破はレーダー表示だけに反映。
     const data = radarData.map(v => Math.min(10, v));
 
     const labels = ranged
