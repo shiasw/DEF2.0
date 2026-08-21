@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>【SW2.5】耐久チェッカー Ver.2.0</title>
+<title>【SW2.5】耐久チェッカー Ver.2.1</title>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
@@ -79,7 +79,7 @@ select {
     align-items:center;
     border:1px solid #444;
     border-radius:6px;
-    overflow:hidden;
+    oflow:hidden;
     background:#111;
 }
 
@@ -111,7 +111,7 @@ select {
     font-size:10px;
 }
 
-.stepper-btn:hover {
+.stepper-btn:ho {
     background:#333;
     color:#fff;
 }
@@ -167,7 +167,7 @@ button {
     cursor:pointer;
 }
 
-button:hover {
+button:ho {
     background:#5aa0ef;
 }
 
@@ -191,7 +191,7 @@ button:hover {
     font-weight:600;
 }
 
-.version {
+.sion {
     margin-top:16px;
     text-align:right;
     font-size:11px;
@@ -212,7 +212,7 @@ button:hover {
 
 <body>
 
-<h1>【SW2.5】耐久チェッカー Ver.2.0</h1>
+<h1>【SW2.5】耐久チェッカー Ver.2.1</h1>
 
 <div class="container">
 
@@ -365,7 +365,7 @@ const CAP_DATA = {
     },
     3: {
         hp:    {min:14, max:35, step:2.1},
-        eva:   {min:5,  max:9,  step:0.4},
+        eva:   {min:5,  max:10,  step:0.5},
         vit:   {min:4,  max:8,  step:0.4},
         mnd:   {min:4,  max:8, step:0.4},
         phys:  {min:0,  max:10, step:1},
@@ -373,7 +373,7 @@ const CAP_DATA = {
     },
     4: {
         hp:    {min:18, max:40, step:2.2},
-        eva:   {min:7,  max:11, step:0.4},
+        eva:   {min:6,  max:12, step:0.6},
         vit:   {min:5,  max:9, step:0.4},
         mnd:   {min:5,  max:9, step:0.4},
         phys:  {min:0, max:12, step:1.2},
@@ -381,7 +381,7 @@ const CAP_DATA = {
     },
     5: {
         hp:    {min:22, max:50, step:2.8},
-        eva:   {min:9,  max:14, step:0.5},
+        eva:   {min:7,  max:14, step:0.7},
         vit:   {min:6,  max:11, step:0.5},
         mnd:   {min:6,  max:11, step:0.5},
         phys:  {min:0, max:14, step:1.4},
@@ -389,7 +389,7 @@ const CAP_DATA = {
     },
     6: {
         hp:    {min:26, max:55, step:2.9},
-        eva:   {min:11, max:16, step:0.5},
+        eva:   {min:8, max:16, step:0.8},
         vit:   {min:7,  max:12, step:0.5},
         mnd:   {min:7,  max:12, step:0.5},
         phys:  {min:0, max:16, step:1.6},
@@ -397,7 +397,7 @@ const CAP_DATA = {
     },
     7: {
         hp:    {min:30, max:70, step:4},
-        eva:   {min:13, max:18, step:0.5},
+        eva:   {min:10, max:18, step:0.8},
         vit:   {min:8, max:13, step:0.5},
         mnd:   {min:8, max:13, step:0.5},
         phys:  {min:0, max:18, step:1.8},
@@ -405,7 +405,7 @@ const CAP_DATA = {
     },
     8: {
         hp:    {min:34, max:75, step:4.1},
-        eva:   {min:15, max:21, step:0.6},
+        eva:   {min:12, max:20, step:0.8},
         vit:   {min:9, max:15, step:0.6},
         mnd:   {min:9, max:15, step:0.6},
         phys:  {min:0, max:20, step:2},
@@ -413,7 +413,7 @@ const CAP_DATA = {
     },
     9: {
         hp:    {min:38, max:90, step:5.2},
-        eva:   {min:17, max:23, step:0.6},
+        eva:   {min:14, max:22, step:0.8},
         vit:   {min:10, max:16, step:0.6},
         mnd:   {min:10, max:16, step:0.6},
         phys:  {min:0, max:22, step:2.2},
@@ -421,7 +421,7 @@ const CAP_DATA = {
     },
     10: {
         hp:    {min:42, max:95, step:5.3},
-        eva:   {min:19, max:25, step:0.6},
+        eva:   {min:16, max:24, step:0.8},
         vit:   {min:11, max:17, step:0.6},
         mnd:   {min:12, max:18, step:0.6},
         phys:  {min:0, max:24, step:2.4},
@@ -429,7 +429,7 @@ const CAP_DATA = {
     },
     12: {
         hp:    {min:46, max:110, step:6.4},
-        eva:   {min:22, max:29, step:0.7},
+        eva:   {min:20, max:28, step:0.8},
         vit:   {min:13, max:20, step:0.7},
         mnd:   {min:14, max:21, step:0.7},
         phys:  {min:0, max:28, step:2.8},
