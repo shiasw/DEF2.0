@@ -339,7 +339,12 @@ button:ho {
 <div class="score" id="totalScore"></div>
 <div class="sub" id="comment"></div>
 <div class="sub" id="scoreMax"></div>
-<div class="version">Ver2.1 2026/08/21</div>
+<div class="version">Ver2.1 <span id="today"></span></div>
+
+<script>
+document.getElementById('today').textContent =
+  new Date().toLocaleDateString('ja-JP').replaceAll('-', '/');
+</script>
 
 </div>
 
